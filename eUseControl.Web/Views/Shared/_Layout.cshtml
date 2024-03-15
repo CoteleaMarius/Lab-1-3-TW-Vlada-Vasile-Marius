@@ -1,0 +1,78 @@
+﻿@using System.Web.Optimization;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>RentCar.md</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+     @Styles.Render("~/bundles/open-iconic-bootstrap/css")
+     @Styles.Render("~/bundles/animate/css")
+
+     @Styles.Render("~/bundles/owl.carousel/css")
+     @Styles.Render("~/bundles/owl.theme.default/css")
+     @Styles.Render("~/bundles/magnific-popup/css")
+
+     @Styles.Render("~/bundles/aos/css")
+
+     @Styles.Render("~/bundles/ionicons/css")
+
+     @Styles.Render("~/bundles/bootstrap-datepicker/css")
+     @Styles.Render("~/bundles/jquery.timepicker/css")
+
+     @Styles.Render("~/bundles/flaticon/css")
+     @Styles.Render("~/bundles/icomoon/css")
+     @Styles.Render("~/bundles/style/css")
+
+
+     @if (IsSectionDefined("Styles"))
+     {@RenderSection("Styles", required: false)}
+
+     @Styles.Render("~/bundles/style/css")
+
+
+
+
+</head>
+<body>
+     <div class="wrapper">
+
+          <nav>
+               @Html.Partial("_Header")
+          </nav>
+
+          <section>
+               @Html.Partial("_Navigation")
+          </section>
+
+          @RenderBody()
+
+          <footer>
+               @Html.Partial("_Footer")
+          </footer>
+
+
+          @Scripts.Render("~/bundles/jquery/js")
+          @Scripts.Render("~/bundles/jquery-migrate-3.0.1/js")
+          @Scripts.Render("~/bundles/popper/js")
+          @Scripts.Render("~/bundles/jquery.easing.1.3/js")
+          @Scripts.Render("~/bundles/jquery.waypoints/js")
+          @Scripts.Render("~/bundles/jquery.stellar/js")
+          @Scripts.Render("~/bundles/owl.carousel/js")
+          @Scripts.Render("~/bundles/jquery.magnific-popup/js")
+          @Scripts.Render("~/bundles/aos/js")
+          @Scripts.Render("~/bundles/jquery.animateNumber/js")
+          @Scripts.Render("~/bundles/bootstrap-datepicker/js")
+          @Scripts.Render("~/bundles/jquery.timepicker/js")
+          @Scripts.Render("~/bundles/scrollax/js")
+          @Scripts.Render("~/bundles/google-map/js")
+          @Scripts.Render("~/bundles/main/js")
+
+          @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
